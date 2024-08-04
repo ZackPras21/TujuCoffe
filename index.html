@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Tuju Coffee and Eatery</title>
+      <link rel="icon" type="image/png" href="./Asset/Gambar Tuju.png">
+      <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" /> -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <style>
+         /* Custom text shadow classes (if needed) */
+         .text-shadow-sm {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+         }
+         .text-shadow-md {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+         }
+         .text-shadow-lg {
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+         }
+         .text-shadow-xl {
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+         }
+         .filled-text {
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #f68b31; /* Stroke color */
+         }
+
+         .full-screen-bg {
+            width: 100%;
+            height: 100vh; /* Full viewport height */
+            background-image: url("./welcome.png");
+            background-size: cover; /* Cover the entire container */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Avoid repeating the image */
+            position: relative; /* To keep any content in place */
+         }
+      </style>
+   </head>
+   <body class="flex flex-col min-h-screen font-sans">
+      <!-- Header Section -->
+      <header class="bg-[#1B1A1A] text-white py-2">
+         <div class="container mx-auto">
+            <nav class="flex justify-between items-center">
+               <a href="./index.html"><img src="./Asset/header/Icon Home.png" class="ml-10 w-50 h-auto" alt="" /></a>
+
+               <div class="block lg:hidden">
+                  <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white">
+                     <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                     </svg>
+                  </button>
+               </div>
+               <div class="lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0" id="nav-content">
+                  <ul class="flex space-x-8 mx-10">
+                     <li>
+                        <a href="./profil.html"><img src="./Asset/header/Profile Cafe.png" class="w-40 h-auto" alt="" /></a>
+                     </li>
+                     <li>
+                        <a href="./menu.html"><img src="./Asset/header/Menu.png" class="w-40 h-auto" alt="" /></a>
+                     </li>
+                     <li>
+                        <a href="./news.html"><img src="./Asset/header/News.png" class="w-40 h-auto" alt="" /></a>
+                     </li>
+                     <li>
+                        <a href="./social.html"><img src="./Asset/header/Social Media.png" class="w-30 h-auto" alt="" /></a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </header>
+
+      <!-- Main Content Section -->
+      <section class="flex-grow">
+         <div>
+            <!-- Profile Page -->
+            <div class="h-screen w-full bg-center bg-cover relative" style="background-image: url('./welcome.png')">
+               <!-- <div class="full-screen-bg"> -->
+               <div class="absolute bottom-10 left-10 text-white bg-black opacity-80">
+                  <img src="./Asset/Welcome to TuJu Coffe and Eatery!.png" alt="" />
+                  <div class="max-w">
+                     <h1 class="text-2xl font-bold">Cafe paling nyaman di tengan kota Bandung,</h1>
+                     <h1 class="text-2xl font-bold">tempat paling cocok untuk nugas atau meeting bersama teman mu!</h1>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Profil Singkat -->
+            <div class="flex flex-col lg:flex-row">
+               <!-- Image Section -->
+               <img src="./Asset/Profil.png" alt="Image" class="w-full lg:w-1/2 h-auto object-cover" />
+
+               <!-- Content Section -->
+               <div class="flex flex-col justify-center p-8 bg-[#F7CDA0] lg:w-1/2">
+                  <!-- Heading (Optional) -->
+                  <!-- <h2 class="text-2xl lg:text-4xl font-bold mb-4">Profil Singkat Cafe</h2> -->
+
+                  <!-- Sub-Image -->
+                  <img src="./Asset/Profil Singkat Cafe.png" class="w-64 lg:w-80 mx-auto mb-4" alt="" />
+
+                  <!-- Description -->
+                  <p class="text-base lg:text-2xl">
+                     Tuju adalah cafe yang beralamat Jl. Ambon No.14, Citarum, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40115. Cafe dengan konsep shared place dengan butik, photo booth, dan production house dalam satu gedung yang nyaman
+                     untuk di jadikan sebagai tempat hang-out atau bahkan mengerjakan tugas-tugas bersama.
+                  </p>
+               </div>
+            </div>
+
+            <!-- Menu Cafe -->
+            <div class="flex bg-[#E58E42]">
+               <div class="flex flex-col">
+                  <div class="grid grid-cols-3 gap-3 m-5 p-5 sm:grid-cols-1 md:grid-cols-3">
+                     <div class="col-span-1"></div>
+                     <div>
+                        <img src="./Asset/Gambar Makanan Landing 1.png" alt="" />
+                     </div>
+                     <div>
+                        <img src="./Asset/Gambar Makanan Landing 2.png" alt="" />
+                     </div>
+                  </div>
+                  <div class="p-5 grid grid-cols-4 gap- m-5 sm:grid-cols-1 md:grid-cols-4">
+                     <div class="col-span-2">
+                        <img src="./Asset/Menu Cafe.png" alt="" />
+                        <h1 class="text-2xl font-bold my-5">
+                           Dengan menawarkan berbagai pilihan menu makanan dan minuman, dari makanan ringan, nasi, pasta, pastry, dan derssert dan minuman dari kopi, teh, dan berbagai minuman lain yang dapat kamu pesan untuk menemani mu di
+                           TuJu
+                        </h1>
+                     </div>
+                     <div class="col-span-1"></div>
+
+                     <div>
+                        <img src="./Asset/Gambar Makanan Landing 3.png" alt="" />
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- News Update -->
+            <div class="flex bg-[#994E23] p-5">
+               <div class="flex flex-col items-start w-full md:flex-row sm:flex-row p-5 m-5">
+                  <div class="flex-1">
+                     <!-- <h1 class="text-6xl mx-10" id="about-us">About Us</h1> -->
+                     <img src="./asset/News Update.png" class="mx-12" />
+
+                     <div class="grid grid-cols-5 gap-4 my-5 mx-12">
+                        <div class="col-span-2">
+                           <h1 class="text-2xl font-bold my-5">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet iaculis tortor. Nunc feugiat libero fringilla ante suscipit, blandit congue augue volutpat. Interdum et malesuada fames ac ante ipsum primis
+                              in faucibus.
+                           </h1>
+                        </div>
+                     </div>
+
+                     <div class="grid grid-cols-3 gap-4 p-5 sm:grid-cols-1 md:grid-cols-3">
+                        <div class="flex flex-col mx-10">
+                           <img src="./Asset/news/Gambar Makanan 4.png" class="" alt="" />
+                           <div class="bg-[#F7CDA0]">
+                              <h1 class="text-1xl p-2 font-bold text-center mb-5">Promo terbaru hari ini, nikmati potongan harga pada pilihan menu-menu ini</h1>
+                           </div>
+                        </div>
+
+                        <div class="flex flex-col mx-10">
+                           <img src="./Asset/news/Gambar Makanan 5.png" alt="" />
+                           <div class="bg-[#F7CDA0] flex-1">
+                              <h1 class="text-1xl p-2 font-bold text-center mb-5">Event terbaru yang akan di laksanakan di TuJu</h1>
+                           </div>
+                        </div>
+
+                        <div class="flex flex-col mx-10">
+                           <img src="./Asset/news/Gambar Makanan 6.png" alt="" />
+                           <div class="bg-[#F7CDA0] flex-1">
+                              <h1 class="text-1xl p-2 font-bold text-center">Menu Spesial hari ini</h1>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Reach Us  -->
+            <div class="flex bg-[#6C2D19] p-5">
+               <div class="flex flex-col items-start w-full md:flex-row sm:flex-row p-5 m-5">
+                  <div class="flex-1">
+                     <!-- <h1 class="text-6xl mx-10" id="about-us">About Us</h1> -->
+                     <img src="./asset/Reach Us At.png" class="mx-12" />
+
+                     <div class="grid grid-cols-3 gap-4 p-5 sm:grid-cols-1 md:grid-cols-3">
+                        <div class="flex flex-col mx-10">
+                           <img src="./Asset/Gambar Tuju.png" class="" alt="" />
+                           <div class="bg-[#F7CDA0] p-10">
+                              <h1 class="text-2xl p-2 font-bold text-center mb-5">@sosial Media</h1>
+                           </div>
+                        </div>
+
+                        <div class="flex flex-col mx-10 col-span-2">
+                           <h1 class="text-2xl p-2">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet iaculis tortor. Nunc feugiat libero fringilla ante suscipit, blandit congue augue volutpat. Interdum et malesuada fames ac ante ipsum primis
+                              in faucibus.
+                           </h1>
+                           <h1 class="text-2xl p-2 font-bold my-5">@sosial media</h1>
+                           <h1 class="text-2xl p-2 font-bold mb-5">@sosial media</h1>
+                           <h1 class="text-2xl p-2 font-bold mb-5">@sosial media</h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="bg-[#F7CDA0] text-black text-center py-4 h-30">
+         <div class="grid grid-cols-3 gap-4 p-5">
+            <div>
+               <h1 class="text-4xl text-left p-2 ml-5">TuJu Coffe and Eatery</h1>
+               <h1 class="text-xl text-left ml-5 p-2">Jl. Ambon No.14, Citarum, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40115</h1>
+               <h1 class="text-2xl p-2 font-bold mb-5 text-left ml-5">&copy; TuJu Coffe and Eatery</h1>
+            </div>
+            <div class="col-span-1"></div>
+            <div>
+               <h1 class="text-3xl text-left font-bold my-2">Sitemap</h1>
+               <h1 class="text-2xl text-left"><a href="./profil.html">Profil</a></h1>
+               <h1 class="text-2xl text-left"><a href="./menu.html">Menu</a></h1>
+               <h1 class="text-2xl text-left"><a href="./news.html">News</a></h1>
+               <h1 class="text-2xl text-left"><a href="./social.html">Sosial Media</a></h1>
+            </div>
+         </div>
+
+         <div class="container mt-10">
+            <!-- <p>&copy; Copyright © 2024 Kedai Wawind | All Rights Reserved.</p> -->
+         </div>
+      </footer>
+   </body>
+</html>

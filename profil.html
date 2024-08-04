@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Tuju Coffee and Eatery</title>
+      <link rel="icon" type="image/png" href="./Asset/Gambar Tuju.png">
+      <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" /> -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <style>
+         /* Custom text shadow classes (if needed) */
+         .text-shadow-sm {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+         }
+         .text-shadow-md {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+         }
+         .text-shadow-lg {
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+         }
+         .text-shadow-xl {
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+         }
+         .filled-text {
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #f68b31; /* Stroke color */
+         }
+      </style>
+   </head>
+   <body class="flex flex-col min-h-screen font-sans">
+      <!-- Header Section -->
+      <header class="bg-[#1B1A1A] text-white py-2">
+         <div class="container mx-auto">
+            <nav class="flex justify-between items-center">
+               <a href="./index.html"><img src="./Asset/header/Icon Home.png" class="ml-10 w-50 h-auto" alt="" /></a>
+               <ul class="flex space-x-8 mx-10">
+                  <li>
+                     <a href="./profil.html"><img src="./Asset/header/Profile Cafe.png" class="w-40 h-auto" alt="" /></a>
+                  </li>
+                  <li>
+                     <a href="./menu.html"><img src="./Asset/header/Menu.png" class="w-40 h-auto" alt="" /></a>
+                  </li>
+                  <li>
+                     <a href="./news.html"><img src="./Asset/header/News.png" class="w-40 h-auto" alt="" /></a>
+                  </li>
+                  <li>
+                     <a href="./social.html"><img src="./Asset/header/Social Media.png" class="w-30 h-auto" alt="" /></a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+
+      <!-- Main Content Section -->
+      <section class="flex-grow">
+         <div>
+            <!-- Profile Page -->
+               <div class="w-full h-screen bg-center bg-cover relative" style="background-image: url('./Asset/Profil Cafe.png')">
+                  <div class="absolute right-0 p-5 text-white bg-black opacity-80 w-full sm:w-2/3 md:w-1/2 lg:w-1/3 h-full flex flex-col items-center justify-center text-sm sm:text-base">
+                      <img src="./Asset/Profil Cafe (1).png" class="w-1/2 mb-4" alt="Cafe Image" />
+                      <div class="w-full text-center px-4 sm:px-8">
+                          <h1 class="text-base sm:text-lg md:text-xl mb-6 text-left">
+                              TuJu coffe and eatery adalah cafe yang berlokasi di daerah Bandung, cave ini berkonsep shared place dengan sebuah toko butik dan photobox yang di atur oleh satu manajemen. di bangun pada 15 april 2022 yang
+                              berlokasi di Jl. Ambon No.14, Citarum, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40115.
+                          </h1>
+                          <h1 class="text-base sm:text-lg md:text-xl text-left">
+                              Dengan tema desain mid-century yang di kombinasikan dengan tropis dan mediteran karena berkonsep peralihan jaman untuk desain bangunan. TuJu juga menyediakan berbagai fasilitas untuk membuat para pengunjung merasa
+                              nyaman seperti wifi, AC, musola dan pilihan smoking area dan no smoking area.
+                          </h1>
+                      </div>
+                  </div>
+              
+               </div>
+               <!-- <img src="./Asset/Profil Cafe.png" class="object-fill" alt="" /> -->
+            </div>
+
+            <!-- Profil Singkat -->
+            <div class="flex flex-col justify-center p-8 bg-[#F7CDA0]">
+               <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 m-5 p-5">
+                   <div class="flex items-center justify-center">
+                       <img src="./Asset/Mesin Kopi.png" alt="Coffee Machine" class="w-full h-auto max-w-full" />
+                   </div>
+                   <div class="flex flex-col justify-center">
+                       <p class="text-base sm:text-lg md:text-xl m-5">
+                           TuJu menawarkan berbagai pilihan menu yang bisa di nikmati oleh pengunjung, dengan menawarkan konsep makanan mix indonesia dan berbagai negara lain, TuJu menawarkan pilihan makanan ringan seperti slider, makanan
+                           berat seperti rice bowl, dan berbagai pilihan dessert dan pastry.
+                       </p>
+                       <p class="text-base sm:text-lg md:text-xl m-5">
+                           Selain makanan TuJu juga menawarkan berbagai pilihan minuman, dengan menu andalan kopi susu ala TuJu, namun TuJu sendiri menawarkan berbagai pilihan minuman lain seperti teh dan menu minuman lain.
+                       </p>
+                   </div>
+               </div>
+           </div>
+
+
+            <!-- Pictures -->
+            <div class="bg-[#E58E42] flex flex-col items-center">
+               <img src="./Asset/Pictures.png" alt="" class="mt-10" />
+
+               <div class="grid grid-cols-3 gap-3 m-5 p-5 sm:grid-cols-1 md:grid-cols-3">
+                  <div>
+                     <img class="w-3/4 my-10" src="./Asset/Gambar Makanan Landing 1.png" alt="" />
+                  </div>
+                  <div>
+                     <img class="w-3/4 my-10" src="./Asset/Gambar Makanan Landing 2.png" alt="" />
+                  </div>
+                  <div>
+                     <img class="w-3/4 my-10" src="./Asset/Picture Makanan 3.png" alt="" />
+                  </div>
+                  <div>
+                     <img class="w-3/4 my-10" src="./Asset/Picture Makanan 4.png" alt="" />
+                  </div>
+                  <div>
+                     <img class="w-3/4 my-10" src="./Asset/Picture Makanan 5.png" alt="" />
+                  </div>
+                  <div>
+                     <img class="w-3/4 my-10" src="./Asset/news/Gambar Makanan 6.png" alt="" />
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="bg-[#F7CDA0] text-black text-center py-4 h-30">
+         <div class="grid grid-cols-3 gap-4 p-5">
+            <div>
+               <h1 class="text-4xl text-left p-2 ml-5">TuJu Coffe and Eatery</h1>
+               <h1 class="text-xl text-left ml-5 p-2">Jl. Ambon No.14, Citarum, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40115</h1>
+               <h1 class="text-2xl p-2 font-bold mb-5 text-left ml-5">&copy; TuJu Coffe and Eatery</h1>
+            </div>
+            <div class="col-span-1"></div>
+            <div>
+               <h1 class="text-3xl text-left font-bold my-2">Sitemap</h1>
+               <h1 class="text-2xl text-left"><a href="./profil.html">Profil</a></h1>
+               <h1 class="text-2xl text-left"><a href="./menu.html">Menu</a></h1>
+               <h1 class="text-2xl text-left"><a href="./news.html">News</a></h1>
+               <h1 class="text-2xl text-left"><a href="./social.html">Sosial Media</a></h1>
+            </div>
+         </div>
+
+         <div class="container mt-10">
+            <!-- <p>&copy; Copyright © 2024 Kedai Wawind | All Rights Reserved.</p> -->
+         </div>
+      </footer>
+   </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Tuju Coffee and Eatery</title>
+      <link rel="icon" type="image/png" href="./Asset/Gambar Tuju.png">
+      <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" /> -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <style>
+         /* Custom text shadow classes (if needed) */
+         .text-shadow-sm {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+         }
+         .text-shadow-md {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+         }
+         .text-shadow-lg {
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+         }
+         .text-shadow-xl {
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+         }
+         .filled-text {
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: #f68b31; /* Stroke color */
+         }
+      </style>
+   </head>
+   <body class="flex flex-col min-h-screen font-sans">
+      <!-- Header Section -->
+      <header class="bg-[#1B1A1A] text-white py-2">
+         <div class="container mx-auto">
+            <nav class="flex justify-between items-center">
+               <a href="./index.html"><img src="./Asset/header/Icon Home.png" class="ml-10 w-50 h-auto" alt="" /></a>
+               <ul class="flex space-x-8 mx-10">
+                  <li>
+                     <a href="./profil.html"><img src="./Asset/header/Profile Cafe.png" class="w-40 h-auto" alt="" /></a>
+                  </li>
+                  <li>
+                     <a href="./menu.html"><img src="./Asset/header/Menu.png" class="w-40 h-auto" alt="" /></a>
+                  </li>
+                  <li>
+                     <a href="./news.html"><img src="./Asset/header/News.png" class="w-40 h-auto" alt="" /></a>
+                  </li>
+                  <li>
+                     <a href="./social.html"><img src="./Asset/header/Social Media.png" class="w-30 h-auto" alt="" /></a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+
+      <!-- Main Content Section -->
+      <section class="flex-grow">
+         <div>
+            <!-- Profile Page -->
+            <div class="w-full h-screen bg-center bg-cover relative" style="background-image: url('./Asset/news/News.png'); background-size: cover; background-repeat: no-repeat; background-position: center"></div>
+
+            <!-- Menu Baru -->
+            <div class="flex flex-col justify-center p-8 bg-[#994E23]">
+               <div class="grid grid-cols-2 gap-3 m-5 p-5 sm:grid-cols-1 md:grid-cols-2">
+                  <div>
+                     <img src="./Asset/news/Group 14.png" alt="" />
+                  </div>
+                  <div class="m-10">
+                     <img src="./Asset/news/Sudah kah mencoba menu baru kita_.png" alt="" class="my-5" />
+                     <p class="text-2xl my-5">
+                        Memperkenalkan menu terbaru kita, Fettuccine Alfredo! pasta fettuccine yang di masak dengan keju parmesan yang berasal dari Roma Italia, dengan sedikit twist ala TuJu fettuccine alfredo yang menggunakan potongan
+                        filet dada ayam panggang untuk meningkatkan rasa dari fettuccine alfredo TuJu.
+                     </p>
+                     <p class="text-2xl my-5">fettuccine alfredo ini sudah bisa di pesan mulai hari ini jadi tunggu apa lagi ajak teman-teman mu untuk hang-out atau mengerjakan project terbaru kalian dan mencoba menu terbaru dari TuJu</p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- News Update -->
+            <div class="flex bg-[#6C2D19] p-5">
+               <div class="flex flex-col items-start w-full md:flex-row sm:flex-row p-5 m-5">
+                  <div class="flex-1">
+                     <!-- <h1 class="text-6xl mx-10" id="about-us">About Us</h1> -->
+
+                     <div class="grid grid-cols-3 gap-4 p-5 sm:grid-cols-1 md:grid-cols-3">
+                        <div class="flex flex-col mx-10">
+                           <img src="./Asset/Picture Makanan 5.png" class="" alt="" />
+                           <div class="bg-[#F7CDA0]">
+                              <h1 class="text-1xl p-2 font-bold text-center mb-10">Artikel Berita Sebelumnya</h1>
+                           </div>
+                        </div>
+
+                        <div class="flex flex-col mx-10">
+                           <img src="./Asset/news/brooke-cagle--uHVRvDr7pg-unsplash 2.png" alt="" />
+                           <div class="bg-[#F7CDA0] flex-1">
+                              <h1 class="text-1xl p-2 font-bold text-center mb-10">Artikel Berita Lainnya</h1>
+                           </div>
+                        </div>
+
+                        <div class="flex flex-col mx-10">
+                           <img src="./Asset/news/image 13.png" alt="" />
+                           <div class="bg-[#F7CDA0] flex-1">
+                              <h1 class="text-1xl p-2 font-bold text-center">Artikel Berita lainnya</h1>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="bg-[#F7CDA0] text-black text-center py-4 h-30">
+         <div class="grid grid-cols-3 gap-4 p-5">
+            <div>
+               <h1 class="text-4xl text-left p-2 ml-5">TuJu Coffe and Eatery</h1>
+               <h1 class="text-xl text-left ml-5 p-2">Jl. Ambon No.14, Citarum, Kec. Bandung Wetan, Kota Bandung, Jawa Barat 40115</h1>
+               <h1 class="text-2xl p-2 font-bold mb-5 text-left ml-5">&copy; TuJu Coffe and Eatery</h1>
+            </div>
+            <div class="col-span-1"></div>
+            <div>
+               <h1 class="text-3xl text-left font-bold my-2">Sitemap</h1>
+               <h1 class="text-2xl text-left"><a href="./profil.html">Profil</a></h1>
+               <h1 class="text-2xl text-left"><a href="./menu.html">Menu</a></h1>
+               <h1 class="text-2xl text-left"><a href="./news.html">News</a></h1>
+               <h1 class="text-2xl text-left"><a href="./social.html">Sosial Media</a></h1>
+            </div>
+         </div>
+
+         <div class="container mt-10">
+            <!-- <p>&copy; Copyright © 2024 Kedai Wawind | All Rights Reserved.</p> -->
+         </div>
+      </footer>
+   </body>
+</html>
