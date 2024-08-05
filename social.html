@@ -8,6 +8,12 @@
       <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" /> -->
       <script src="https://cdn.tailwindcss.com"></script>
       <style>
+         @import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400;700&display=swap');
+
+         body {
+            font-family: 'Radio Canada', sans-serif;
+         }
+
          /* Custom text shadow classes (if needed) */
          .text-shadow-sm {
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -27,7 +33,7 @@
          }
       </style>
    </head>
-   <body class="flex flex-col min-h-screen font-sans">
+   <body class="flex flex-col min-h-screen">
       <!-- Header Section -->
       <header class="bg-[#1B1A1A] text-white py-2">
          <div class="container mx-auto">
@@ -65,22 +71,22 @@
                      <div class="grid grid-cols-3 gap-4 p-5 sm:grid-cols-1 md:grid-cols-2">
                         <div class="flex flex-col mx-10">
                            <img src="./Asset/news/Group 14.png" class="" alt="" />
-                           <div class="bg-[#F7CDA0]">
-                              <h1 class="text-1xl p-2 font-bold text-center mb-5">Post 9 Juni 2024</h1>
+                           <div class="bg-[#F7CDA0] flex-1">
+                              <h1 class="text-1xl p-2 text-center mb-5">Post 9 Juni 2024</h1>
                            </div>
                         </div>
 
                         <div class="flex flex-col mx-10">
                            <img src="./Asset/Gambar Makanan Landing 2.png" alt="" />
                            <div class="bg-[#F7CDA0] flex-1">
-                              <h1 class="text-1xl p-2 font-bold text-center mb-5">Post 10 Juni 2024</h1>
+                              <h1 class="text-1xl p-2 text-center">Post 10 Juni 2024</h1>
                            </div>
                         </div>
 
                         <div class="flex flex-col mx-10">
                            <img src="./Asset/Gambar Makanan Landing 1.png" alt="" />
                            <div class="bg-[#F7CDA0] flex-1">
-                              <h1 class="text-1xl p-2 font-bold text-center">Post Juni 2024</h1>
+                              <h1 class="text-1xl p-2 text-center mb-5">Post Juni 2024</h1>
                            </div>
                         </div>
                      </div>
@@ -92,7 +98,7 @@
             <div class="bg-[#6C2D19] p-5">
                <!-- Reach Us At Image -->
                <div class="flex justify-center mb-5">
-                  <img src="./asset/news/Reach Us On Our Social.png" alt="Reach Us At" class="mx-12" />
+                  <img src="./Asset/Reach Us At.png" alt="Reach Us At" class="mx-12" />
                </div>
 
                <!-- Content Below the Image -->
@@ -101,16 +107,16 @@
                      <div class="flex flex-col mx-10">
                         <img src="./Asset/Menu Minuman.png" alt="Gambar Tuju" />
                         <div class="bg-[#F7CDA0] p-10">
-                           <h1 class="text-4xl font-bold text-center">@sosial Media</h1>
+                           <h1 class="text-4xl  text-center">@sosial Media</h1>
                         </div>
                      </div>
 
                      <div class="grid grid-rows-4 grid-flow-col gap-4">
                         <div class="row-span-1"></div>
                         <div class="flex flex-col mx-10">
-                           <h1 class="text-2xl p-2 font-bold my-5">@sosial media</h1>
-                           <h1 class="text-2xl p-2 font-bold mb-5">@sosial media</h1>
-                           <h1 class="text-2xl p-2 font-bold mb-5">@sosial media</h1>
+                           <h1 class="text-2xl p-2  my-5">@sosial media</h1>
+                           <h1 class="text-2xl p-2  mb-5">@sosial media</h1>
+                           <h1 class="text-2xl p-2  mb-5">@sosial media</h1>
                         </div>
                      </div>
                   </div>
@@ -135,10 +141,6 @@
                <h1 class="text-2xl text-left"><a href="./news.html">News</a></h1>
                <h1 class="text-2xl text-left"><a href="./social.html">Sosial Media</a></h1>
             </div>
-         </div>
-
-         <div class="container mt-10">
-            <!-- <p>&copy; Copyright © 2024 Kedai Wawind | All Rights Reserved.</p> -->
          </div>
       </footer>
    </body>
